@@ -13,12 +13,9 @@ steps:
 - task: SonarCloudPrepare@1
   inputs:
     SonarCloud: 'ServiceConnectSonarCloud'
-    organization: 'sonarcloudjc'
+    organization: 'josecorreav'
     scannerMode: 'CLI'
-    configMode: 'manual'
-    cliProjectKey: 'sonarcloudjc_manual'
-    cliProjectName: 'manual'
-    cliSources: '.'
+    configMode: 'file'
 
 - task: SonarCloudAnalyze@1
   inputs:
